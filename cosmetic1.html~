@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cosmetic</title>
+      <meta name="viewport" content="width=divice-width, initail-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="inici.css">
+  </head>
+  <body>
+    <header>
+          <div class="contenidor">
+            <nav>
+            <h1 class="h1">
+              <a href="cosmetic1.html">
+                <img src="./img/lip.png" height="56px"> COSMETIC
+              </a>
+            </h1>
+
+            <div class="menu" id="id_menu">
+              <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icono CRUZ del menú hamburgesa-->
+              <ul>
+              <li><a href="prueba.html">HOME</a></li>
+              <li><a href="prueba.html">MAKE-UP</a></li>
+              <li><a href="prueba.html">SKINCARE</a></li>
+              <li><a href="prueba.html">BEST SELLERS</a></li>
+              <li><a href="prueba.html">PROMOTIONS</a></li>
+              <li><a href="prueba.html">Login</a></li>
+            </ul>
+          </div>
+
+          <i class="fa fa-bars"  onclick="showMenu()"></i>   <!-- icono menú hamburgesa-->
+        </nav>
+      </div>
+        </header>
+        <!--descirpcion de la empresa-->
+    <div class="descript">
+      <h1>Word's best cosmetic products</h1>
+      <p>Discover the make-up products , such as those for the face, eyes and lips . And don't <br>forget to choose the right accessories for a perfect application!
+      <p>Take care of your skin with professional products and beauty treatments created for any need.<br>
+        Unleash the potential of your style and enrich your beauty routine with the best of cosmetic innovation.</p>
+    </div>
+
+    <section class="latest">
+      <h1>Latest Products</h1>
+
+      <div class="row">
+        <div class="latest-col">
+          <img src="./img/image11.jpg">
+          <div class="layer">
+            <h1>Intensive Hand Cream <br>12,99€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image2.jpg">
+          <div class="layer">
+            <h1>Intance Mate Red Lipstik <br>6,20€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image3.jpg">
+          <div class="layer">
+            <h1> Flower Oil<br>15,60€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image4.png">
+          <div class="layer">
+            <h1> Rimmel London High'light<br>15,60€</h1>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="latest">
+      <h1>Most selled</h1>
+
+      <div class="row">
+        <div class="latest-col">
+          <img src="./img/image9.jpg">
+          <div class="layer">
+            <h1>Intensive Hand Cream <br>12,99€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image10.jpg">
+          <div class="layer">
+            <h1>Lipstik <br>6,20€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image12.jpg">
+          <div class="layer">
+            <h1> Flower Oil<br>15,60€</h1>
+          </div>
+        </div>
+
+        <div class="latest-col">
+          <img src="./img/image222.jpg">
+          <div class="layer">
+            <h1> Eyeshadow Palette<br>15,60€</h1>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+        <section class="latest">
+          <h1>Promos</h1>
+
+          <div class="row">
+            <div class="latest-col">
+              <img src="./img/image4.jpg">
+              <div class="layer">
+                <h1>Intensive Hand Cream <br>12,99€</h1>
+              </div>
+            </div>
+
+            <div class="latest-col">
+              <img src="./img/image6.png">
+              <div class="layer">
+                <h1>Lipstik <br>6,20€</h1>
+              </div>
+            </div>
+
+            <div class="latest-col">
+              <img src="./img/image8.jpeg" height=300px>
+              <div class="layer">
+                <h1> Flower Oil<br>15,60€</h1>
+              </div>
+            </div>
+
+            <div class="latest-col">
+              <img src="./img/image7.png">
+              <div class="layer">
+                <h1> Eyeshadow Palette<br>15,60€</h1>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+    <!--script para mostrar y esconder el menú-->
+    <script>
+      var menu = document.getElementById("id_menu");
+      function showMenu(){
+        menu.style.right="0";
+      }
+      function hideMenu(){
+        menu.style.right="-200px";
+      }
+    </script>
+
+
+  </body>
+</html>

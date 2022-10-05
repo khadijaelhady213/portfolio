@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Hurricane&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Hurricane&family=League+Gothic&display=swap');
+*{
+  margin: 0;
+  border: 0;
+}
+
+body{
+  background-color:	white;
+
+}
+/*---------------------------estructura de la pagina----------------------------------*/
+.super{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.megadiv{ /*div de los articulos y informació*/
+width: 75%;
+margin-bottom: 9%;
+}
+.add img{ /*div de la barra lateral -> anuncios*/
+  width: 90%;
+  height: 33.5%;
+}
+.add{
+  padding-top: 5%;
+  width: 20%;
+  margin-bottom: 5%;
+}
+/*-----------------------------fin barra lateral fotos moedelos--------------------------------------*/
+
+/*-------------------------PIÉ DE PÁGINA-------------------------------------*/
+.pie{
+  background-color: #8BA165;
+  width: 100%;
+  display: flex;
+flex-direction: row;
+
+}
+.pie .box{
+  width: 30%;
+  max-height: 1200px;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  padding: 45px 0px;
+  justify-content: center;
+ /*background-color: white;*/
+ margin-bottom: 2%;
+
+}
+
+.box h2{
+  padding-top: 19%;
+  padding-bottom: 2%;
+}
+.box a{
+  list-style: none;
+  display: inline-block;
+  padding-bottom: 5% , 4%;
+  position: relative;
+  cursor: pointer;
+}
+
+.box a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.box a:hover::after{
+  width: 100%;
+}
+#social{
+  margin-top: 0%;
+}
+.socialMedia{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.socialMedia .fa{
+margin-right: 20%;
+color: white;
+}
+/*--------------------------------------fin PRIÉ DE PÁGINA-----------------------------*/
+/*---------------------------Fin estructura de la pagina----------------------------------*/
+
+.contenidor{
+  min-height: 80vh;
+  whidth: 100%;
+  background-image: url("./img1/test2.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.h1 a{ /*----Cosmetic*/
+  color: white;
+  font-family: 'Hurricane', cursive;
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: normal;
+}
+.h1 a:hover{ /*-----------aumentar el tamaño al poner el ratón encima*/
+  font-size: 110px;
+}
+
+nav{ /*ordenar los elementos de la cabecera*/
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+/*darle formato al menú*/
+.menu{
+  flex: 1;
+  text-align: right;
+}
+.menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+li a{
+  font-family: Poppins;
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+}
+
+
+/*BARRAS CON MOVIMENTO BAJO LOS TEXTOS DEL MENÚ*/
+.menu ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+/*LAS BARRAS CONFIGURADAS ARRIBA NO APARECEN HASTA QUE SUCEDA EL CÓDIGO DE ABAJO*/
+.menu ul li:hover::after{
+  width: 100%;
+}
+
+/*--------------------fin cabezera---------------------------------------------------------------------------------*/
+
+/*----------------------descripcion-----------------------------------------------------------------------------*/
+.descript{
+
+  margin: auto;
+  padding-top: 2%;
+  width: 90%;
+  color: black;
+  align-items: center;
+  text-align: center;
+}
+
+.descript h1{
+  font-family:  'PT Sans', sans-serif;
+  font-size: 55px;
+
+}
+.descript p{
+  margin-top: 2%;
+  font-size:20px;
+  font-family: Roboto;
+}
+/*--------------------fin descripoción----------------------------*/
+
+/*----------------seccion latest products-------------*/
+.latest{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 6%;
+  font-size:20px;
+  font-family: Roboto;
+}
+.latest tipo{
+
+  font-family:  'PT Sans', sans-serif;
+  font-size: 55px;
+
+}
+
+.row{
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ .latest-col{
+  width: 21%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+/*overflow: hidden;   quita esto*/
+}
+
+.latest-col img{ /*la imagen adapta su tamaño para caver en la casilla entera*/
+  width: 100%;
+  height: 400px; /*al ponerle porcentaje se lia la cosa, cada imgen hace lo k le da la gana*/
+  border-radius: 10px;
+  display: block;
+}
+.layer h1{
+  /*DARLE FORMA AL NOMBRE Y PRECIO DE LOS PRODUCTOS*/
+  margin-top: 175%;
+  text-align: center;
+   font-family: fantasy;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+
+}
+.layer .fa{ /*ESTRELLITAS*/
+  color: orange;
+  margin-top: 4%;
+
+}
+/*-------------capa de color cuando el ratón pase por encima de la casilla*/
+.layer{
+  background: transparent;
+  height: 130%;
+  width:100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.layer:hover{
+    background: rgba( 200, 200,  200, 0.5);
+}
+
+/*----------------FIN seccion latest products-------------*/
+
+/*esconder el icono de la cruz */
+.menu .fa{
+  display: none;
+}
+/*esconder el icono de las barras meu haburguesa */
+nav .fa{
+  display: none;
+}
+
+
+/*--------------------------ajustar contenirod a != tamaños de pantallas*/
+@media screen and (max-width: 1000px){ /*tamaño dekstop normal*/
+  body{
+    background-color;
+    
+ }
+ 
+ 	/*banner*/
+ 	.contenidor{
+	  min-height: 50vh;
+    }
+
+    /*------------------menu HAMBURGESA--------------*/
+  .menu ul li{
+    display: block;
+  }
+  .menu{
+    position: absolute;
+    background: #91B6A1;
+    height: 50vh;
+    width: 200px;
+    top: 0;
+    right: -210px; /*hacer desaparecer el menu hasta que se pulse sobre el icono*/
+    text-align: left;
+    transition: 1s;
+  }
+  .menu ul{
+    padding:30px;
+  }
+  nav .fa{ /*icomo barras meni hamburgesa*/
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 42px;
+    cursor: pointer;
+  }
+
+  .menu .fa{ /*la cruz para salir del menú*/
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /*la capa por encima del productp*/
+  .layer{
+  	height: 115%;
+	}
+	
+	.layer h1{
+  /*DARLE FORMA AL NOMBRE Y PRECIO DE LOS PRODUCTOS*/
+  margin-top: 430px;
+  }  	
+}
+
+@media screen and (max-width: 768px) { /*TABLET*/
+/*body {
+    background-color: yellow;
+  }*/
+  .contenidor{
+  min-height: 30vh;
+    }
+
+  .h1 a{
+    font-size: 40px;
+  }
+  a img{  /*logotipo*/
+  height: 26px;
+  }
+  .h1 a:hover{
+    font-size: 45px;
+  }
+  li a{
+    font-size: 22px;
+  }
+  .descript h1{
+    font-size: 25px;
+  }
+  .descript p{
+    font-size:20px;
+    font-family: Roboto;
+  }
+  /*------------------menu HAMBURGESA--------------*/
+  .menu ul li{
+    display: block;
+  }
+  .menu{
+    position: absolute;
+    background: #91B6A1;
+    height: 50vh;
+    width: 200px;
+    top: 0;
+    right: -210px; /*hacer desaparecer el menu hasta que se pulse sobre el icono*/
+    text-align: left;
+    transition: 1s;
+  }
+  .menu ul{
+    padding:30px;
+  }
+  nav .fa{ /*icomo barras meni hamburgesa*/
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .menu .fa{ /*la cruz para salir del menú*/
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  /*-------------------------ajustar las columnas de la table, dos fotos po fila-------*/
+
+  .layer{
+    background: transparent;
+    height: 128%;
+  }
+   .latest-col{
+   width: 45%;
+   margin-bottom: 35%;
+  }
+
+  .layer h1{
+    margin-top: 156%;
+       margin-top: 156%;       /* NOMBRE DEL PRODUCTO Y PRECIO */
+      font-size: 17px;
+
+  }
+  /*ajustar la altura de de las imagenes para centrar el texto*/
+  .latest-col img{ /*la imagen adapta su tamaño para caver en la casilla entera*/
+      width: 100%;
+      height: 400px;
+    }
+
+/* BARRA DE ANUNCIOS/MODELOS */
+.super{
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: -37px;  /* para eliminar el margen entre anuncio y pié de pag */
+}
+
+.megadiv{ /*div de los articulos y informació*/
+  width: 100%;
+}
+.add img{ /*div de la barra lateral -> anuncios*/
+  width: 34%;
+  height: 410px;
+  margin-bottom: none;
+
+}
+.add{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+/* PIÉ de pagina */
+    .pie .box{
+      width: 31%;
+
+    }
+    #social{
+      padding-top: 54px;
+    }
+    .socialMedia .fa{
+    margin-right: 10%;
+
+
+
+  }
+
+@media screen and (max-width: 500px){  /*MOBIL*/
+  body{
+    background-color:red;
+  }
+   /*--------AJUSTAR TAMAÑO LETRA----------------*/
+  .contenidor{
+
+	min-height: 30vh;
+  	}
+
+  .h1 a{
+    font-size: 40px;
+  }
+  a img{  /*logotipo*/
+  height: 46px;
+  }
+  .h1 a:hover{
+    font-size: 55px;
+  }
+  li a{
+    font-size: 22px;
+  }
+  .descript h1{
+    font-size: 30px;
+  }
+  .descript p{
+    font-size:20px;
+  }
+  /*------------------menu HAMBURGESA--------------*/
+  .menu ul li{
+    display: block;
+  }
+  .menu{
+    height: 50vh;
+  }
+
+  .layer{
+    background: transparent;
+    height: 140%;
+  }
+   .latest-col{
+   width: 45%;
+   margin-bottom: 35%;
+  }
+
+  .layer h1{
+      margin-top: 320px;
+      font-size: 17px;
+      font-family: Roboto;
+  }
+	/*ajustar la altura de de las imagenes para centrar el texto*/
+	.latest-col img{ /*la imagen adapta su tamaño para caver en la casilla entera*/
+  		width: 100%;
+  		height: 300px;
+  	}
+
+  /* arreglar pié de pag */
+.pie{
+  display: flex;
+  flex-direction: column;
+}
+  .pie .box{
+    margin-bottom: -50px;
+    width: 50%;
+    justify-content:flex-start;
+
+  }
+  #social{
+    margin-top: -7%;
+    margin-bottom: 7%;
+  }
+  .socialMedia .fa{
+  margin-right: 10%;
+
+}
+/*---------------------------fin media Query---------------------------------------*/
+/*---------------------------fin media Query---------------------------------------*/
